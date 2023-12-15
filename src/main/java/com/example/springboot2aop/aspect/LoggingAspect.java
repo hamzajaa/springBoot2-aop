@@ -6,16 +6,29 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
  * ==> Common AspectJ annotations :
- * @Before – Run before the method execution
- * @After – Run after the method returned a result
- * @AfterReturning – Run after the method returned a result, and intercept the returned result as well.
- * @AfterThrowing – Run after the method throws an exception
- * @Around – Run around the method execution, and combine all three advices above.
+ *
+ * @Before – Run before the method execution => Advice that runs before a join point but that does not have the ability to prevent execution flow from proceeding to the join point (unless it throws an exception).
+ * @After – Run after the method returned a result => Advice to be executed regardless of the means by which a join point exits (normal or exceptional return).
+ * @AfterReturning – Run after the method returned a result, and intercept the returned result as well. => Advice to be run after a join point completes normally (for example, if a method returns without throwing an exception).
+ * @AfterThrowing – Run after the method throws an exception => Advice to be executed if a method exists by throwing an exception.
+ * @Around – Run around the method execution, and combine all three advices above. =>
+ * <p>
+ * <p>
+ * Join point is a point during the execution of a program,
+ * such as the execution of a method or the handling of an exception.
+ * In Spring AOP, a join point always represents a method execution.
+ */
+
+/**
+ * Before advice: Advice that runs before a join point but that does not have the ability to prevent execution flow from proceeding to the join point (unless it throws an exception).
+ * After (finally) advice: Advice to be executed regardless of the means by which a join point exits (normal or exceptional return).
+ * After returning advice: Advice to be run after a join point completes normally (for example, if a method returns without throwing an exception).
+ * After throwing advice: Advice to be executed if a method exists by throwing an exception.
+ * Around advice: Advice that surrounds a join point such as a method invocation. This is the most powerful kind of advice. Around advice can perform custom behavior before and after the method invocation. It is also responsible for choosing whether to proceed to the join point or to shortcut the advised method execution by returning its own return value or throwing an exception.
  */
 
 @Aspect
