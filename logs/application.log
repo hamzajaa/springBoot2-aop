@@ -1,0 +1,190 @@
+22:08:49.693 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:08:49.816 [main] INFO  c.e.s.SpringBoot2AopApplication - Starting SpringBoot2AopApplication using Java 21.0.1 with PID 4008 (C:\JobInTech\Java\springBoot2-aop\target\classes started by Lenovo-J in C:\JobInTech\Java\springBoot2-aop)
+22:08:49.816 [main] DEBUG c.e.s.SpringBoot2AopApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+22:08:49.817 [main] INFO  c.e.s.SpringBoot2AopApplication - No active profile set, falling back to 1 default profile: "default"
+22:08:51.029 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:08:51.117 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+22:08:52.222 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8056 (http)
+22:08:52.234 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8056"]
+22:08:52.237 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:08:52.237 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+22:08:52.306 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:08:52.306 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2407 ms
+22:08:52.568 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:08:52.678 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+22:08:52.730 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:08:53.110 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:08:53.146 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:08:53.373 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4aeaff64
+22:08:53.377 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:08:53.418 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:08:53.421 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+22:08:54.699 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:08:54.775 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:08:55.387 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:08:55.827 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8056"]
+22:08:55.880 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8056 (http) with context path ''
+22:08:55.890 [main] INFO  c.e.s.SpringBoot2AopApplication - Started SpringBoot2AopApplication in 6.867 seconds (process running for 8.471)
+22:09:00.098 [http-nio-8056-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:09:00.098 [http-nio-8056-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:09:00.101 [http-nio-8056-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22:09:00.223 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - logBefore running .....
+22:09:00.226 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - Enter: class com.example.springboot2aop.service.EmployeeService.createEmployee() With argument[s] = [Employee [id=null, firstName=admin, lastName=admin, emailId=admin@gmail.com]]
+22:09:00.372 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - logAfter running .....
+22:09:00.372 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - Enter: com.example.springboot2aop.service.EmployeeService.createEmployee() With argument[s] = [Employee [id=1, firstName=admin, lastName=admin, emailId=admin@gmail.com]]
+22:09:02.733 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - logAround running ....
+22:09:02.734 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - Enter: class com.example.springboot2aop.service.EmployeeService.getEmployeeById() With argument[s] = [1]
+22:09:02.812 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - Exit: class com.example.springboot2aop.service.EmployeeService.getEmployeeById with result = Optional[Employee [id=1, firstName=admin, lastName=admin, emailId=admin@gmail.com]]
+22:09:03.067 [http-nio-8056-exec-5] DEBUG c.e.s.aspect.LoggingAspect - logAfterReturning running ....
+22:09:03.067 [http-nio-8056-exec-5] DEBUG c.e.s.aspect.LoggingAspect - Enter: com.example.springboot2aop.service.EmployeeService.deleteEmployee() with argument[s] = [1]
+22:16:13.643 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:16:13.646 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:16:13.654 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:16:20.423 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:16:20.508 [main] INFO  c.e.s.SpringBoot2AopApplication - Starting SpringBoot2AopApplication using Java 21.0.1 with PID 4556 (C:\JobInTech\Java\springBoot2-aop\target\classes started by Lenovo-J in C:\JobInTech\Java\springBoot2-aop)
+22:16:20.509 [main] DEBUG c.e.s.SpringBoot2AopApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+22:16:20.510 [main] INFO  c.e.s.SpringBoot2AopApplication - No active profile set, falling back to 1 default profile: "default"
+22:16:21.659 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:16:21.739 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+22:16:22.587 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8056 (http)
+22:16:22.597 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8056"]
+22:16:22.600 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:16:22.600 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+22:16:22.686 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:16:22.687 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2099 ms
+22:16:22.911 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:16:23.001 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+22:16:23.046 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:16:23.332 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:16:23.360 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:16:23.569 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77ff14ce
+22:16:23.573 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:16:23.599 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:16:23.600 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+22:16:24.637 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:16:24.699 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:16:25.232 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:16:25.665 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8056"]
+22:16:25.686 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8056 (http) with context path ''
+22:16:25.693 [main] INFO  c.e.s.SpringBoot2AopApplication - Started SpringBoot2AopApplication in 5.723 seconds (process running for 6.981)
+22:16:25.898 [http-nio-8056-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:16:25.898 [http-nio-8056-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:16:25.899 [http-nio-8056-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22:16:25.983 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - logBefore running .....
+22:16:25.984 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - Enter: class com.example.springboot2aop.service.EmployeeService.createEmployee() With argument[s] = [Employee [id=null, firstName=admin, lastName=admin, emailId=admin@gmail.com]]
+22:16:26.082 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - logAfter running .....
+22:16:26.083 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - Enter: com.example.springboot2aop.service.EmployeeService.createEmployee() With argument[s] = [Employee [id=1, firstName=admin, lastName=admin, emailId=admin@gmail.com]]
+22:16:26.106 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - logAround running ....
+22:16:26.107 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - Enter: class com.example.springboot2aop.service.EmployeeService.getEmployeeById() With argument[s] = [1]
+22:16:26.181 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - Exit: class com.example.springboot2aop.service.EmployeeService.getEmployeeById with result = Optional[Employee [id=1, firstName=admin, lastName=admin, emailId=admin@gmail.com]]
+22:16:26.382 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+22:16:26.410 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:770)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.springboot2aop.SpringBoot2AopApplication.main(SpringBoot2AopApplication.java:13)
+Caused by: org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-12-15T21:16:26.368+00:00","message":"Employee not found for this id :: 2","details":"uri=/api/v1/employees/id/2"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:112)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:183)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:137)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:932)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:881)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:802)
+	at org.springframework.web.client.RestTemplate.delete(RestTemplate.java:621)
+	at com.example.springboot2aop.runner.SpringRestClient.deleteEmployee(SpringRestClient.java:88)
+	at com.example.springboot2aop.runner.SpringRestClient.run(SpringRestClient.java:42)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:786)
+	... 14 common frames omitted
+22:16:26.422 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:16:26.423 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:16:26.433 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:17:56.987 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22:17:57.081 [main] INFO  c.e.s.SpringBoot2AopApplication - Starting SpringBoot2AopApplication using Java 21.0.1 with PID 9116 (C:\JobInTech\Java\springBoot2-aop\target\classes started by Lenovo-J in C:\JobInTech\Java\springBoot2-aop)
+22:17:57.082 [main] DEBUG c.e.s.SpringBoot2AopApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+22:17:57.083 [main] INFO  c.e.s.SpringBoot2AopApplication - No active profile set, falling back to 1 default profile: "default"
+22:17:58.381 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:17:58.469 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+22:17:59.401 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8056 (http)
+22:17:59.431 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8056"]
+22:17:59.433 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:17:59.433 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+22:17:59.505 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:17:59.505 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2322 ms
+22:17:59.736 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:17:59.822 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+22:17:59.866 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22:18:00.189 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22:18:00.222 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:18:00.389 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a8d676e
+22:18:00.393 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:18:00.432 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:18:00.434 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+22:18:01.697 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:18:01.768 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:18:02.442 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:18:02.949 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8056"]
+22:18:02.971 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8056 (http) with context path ''
+22:18:02.979 [main] INFO  c.e.s.SpringBoot2AopApplication - Started SpringBoot2AopApplication in 6.48 seconds (process running for 7.826)
+22:18:03.240 [http-nio-8056-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:18:03.240 [http-nio-8056-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:18:03.241 [http-nio-8056-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22:18:03.323 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - logBefore running .....
+22:18:03.324 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - Enter: class com.example.springboot2aop.service.EmployeeService.createEmployee() With argument[s] = [Employee [id=null, firstName=admin, lastName=admin, emailId=admin@gmail.com]]
+22:18:03.425 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - logAfter running .....
+22:18:03.426 [http-nio-8056-exec-1] DEBUG c.e.s.aspect.LoggingAspect - Enter: com.example.springboot2aop.service.EmployeeService.createEmployee() With argument[s] = [Employee [id=1, firstName=admin, lastName=admin, emailId=admin@gmail.com]]
+22:18:03.460 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - logAround running ....
+22:18:03.462 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - Enter: class com.example.springboot2aop.service.EmployeeService.getEmployeeById() With argument[s] = [1]
+22:18:03.550 [http-nio-8056-exec-2] DEBUG c.e.s.aspect.LoggingAspect - Exit: class com.example.springboot2aop.service.EmployeeService.getEmployeeById with result = Optional[Employee [id=1, firstName=admin, lastName=admin, emailId=admin@gmail.com]]
+22:18:03.695 [http-nio-8056-exec-4] DEBUG c.e.s.aspect.LoggingAspect - logAfterThrowing running .....
+22:18:03.695 [http-nio-8056-exec-4] ERROR c.e.s.aspect.LoggingAspect - Exception in com.example.springboot2aop.service.EmployeeService.updateEmployee() with cause = NULL
+22:18:03.718 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+22:18:03.738 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:770)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.springboot2aop.SpringBoot2AopApplication.main(SpringBoot2AopApplication.java:13)
+Caused by: org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-12-15T21:18:03.700+00:00","message":"Employee not found for this id :: 2","details":"uri=/api/v1/employees/id/2"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:112)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:183)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:137)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:932)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:881)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:802)
+	at org.springframework.web.client.RestTemplate.put(RestTemplate.java:566)
+	at com.example.springboot2aop.runner.SpringRestClient.updateEmployee(SpringRestClient.java:82)
+	at com.example.springboot2aop.runner.SpringRestClient.run(SpringRestClient.java:39)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:786)
+	... 14 common frames omitted
+22:18:03.749 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:18:03.750 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:18:03.758 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
