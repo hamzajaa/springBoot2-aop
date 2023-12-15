@@ -9,6 +9,15 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
+/**
+ * ==> Common AspectJ annotations :
+ * @Before – Run before the method execution
+ * @After – Run after the method returned a result
+ * @AfterReturning – Run after the method returned a result, and intercept the returned result as well.
+ * @AfterThrowing – Run after the method throws an exception
+ * @Around – Run around the method execution, and combine all three advices above.
+ */
+
 @Aspect
 @Component
 @Slf4j
@@ -49,6 +58,7 @@ public class LoggingAspect {
      * @param joinPoint
      * @return
      * @throws Throwable
+     * @Around annotated methods run before and after all methods matching with a pointcut expression
      */
     @Around("execution(* com.example.springboot2aop.service.EmployeeService.getEmployeeById(..))")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
