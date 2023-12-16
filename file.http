@@ -1,0 +1,35 @@
+POST http://localhost:8056/api/v1/employees/test/
+Content-Type: application/json
+
+{
+  "firstName": "hamza",
+  "lastName": "jaa",
+  "emailId": "hamza@gmail.com"
+}
+
+###
+POST http://localhost:8056/api/v1/employees/test/
+Content-Type: application/json
+
+{
+  "firstName": "hamza",
+  "lastName": "jaa"
+}
+
+###
+POST http://localhost:8056/api/v1/employees/test/
+Content-Type: application/json
+
+{
+  "lastName": "jaa"
+}
+
+###
+POST http://localhost:8056/api/v1/employees/test/
+Content-Type: application/json
+
+{
+  "firstName": "hamza",
+  "lastName": "jaa",
+  "emailId": ""
+}

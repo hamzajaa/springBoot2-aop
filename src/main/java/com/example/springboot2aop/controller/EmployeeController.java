@@ -47,4 +47,9 @@ public class EmployeeController {
             throws ResourceNotFoundException {
         return employeeService.deleteEmployee(employeeId);
     }
+
+    @PostMapping("/test/")
+    public void test(@RequestBody Employee employee) {
+        employeeService.test(employee);
+    }
 }

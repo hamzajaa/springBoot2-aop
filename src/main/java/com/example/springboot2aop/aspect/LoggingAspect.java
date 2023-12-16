@@ -1,5 +1,6 @@
 package com.example.springboot2aop.aspect;
 
+import com.example.springboot2aop.bean.Employee;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -131,6 +132,25 @@ public class LoggingAspect {
                 joinPoint.getSignature().getDeclaringTypeName(),
                 joinPoint.getSignature().getName(),
                 error.getCause() != null ? error.getCause() : "NULL");
+    }
+
+    @Before("execution(* com.example.springboot2aop.service.EmployeeService.test(..)) && args(employee) ")
+    public void validateFields(Employee employee) {
+        if (employee.getFirstName() == null && employee.getEmailId() == null) {
+            log.info("FirstName and Email must not be null");
+            throw new IllegalArgumentException("FirstName and Email must not be null");
+        } else if (isEmpty(employee.getEmailId())) {
+            log.info("Email must not be null");
+            throw new IllegalArgumentException("Email must not be null");
+        }
+    }
+
+    private static boolean isNotEmpty(String value) {
+        return !isEmpty(value);
+    }
+
+    private static boolean isEmpty(String value) {
+        return value == null || value.isEmpty();
     }
 
 }
