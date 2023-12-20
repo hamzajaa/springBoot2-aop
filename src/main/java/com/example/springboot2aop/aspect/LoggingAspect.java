@@ -145,6 +145,17 @@ public class LoggingAspect {
         }
     }
 
+    @Before("@annotation(com.example.springboot2aop.aspect.CheckValidationEmployeeFields) && args(employee)")
+    public void validateFieldsAnnotation(Employee employee) {
+        if (employee.getFirstName() == null && employee.getEmailId() == null) {
+            log.info("FirstName and Email must not be null");
+            throw new IllegalArgumentException("FirstName and Email must not be null");
+        } else if (isEmpty(employee.getEmailId())) {
+            log.info("Email must not be null");
+            throw new IllegalArgumentException("Email must not be null");
+        }
+    }
+
     private static boolean isNotEmpty(String value) {
         return !isEmpty(value);
     }

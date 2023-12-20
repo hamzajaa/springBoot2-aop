@@ -1,5 +1,6 @@
 package com.example.springboot2aop.service;
 
+import com.example.springboot2aop.aspect.CheckValidationEmployeeFields;
 import com.example.springboot2aop.bean.Employee;
 import com.example.springboot2aop.dao.EmployeeDao;
 import com.example.springboot2aop.exception.ResourceNotFoundException;
@@ -27,6 +28,7 @@ public class EmployeeService {
         return employeeDao.findById(id);
     }
 
+    @CheckValidationEmployeeFields
     public Employee createEmployee(Employee employee) {
         return employeeDao.save(employee);
     }

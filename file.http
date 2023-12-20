@@ -33,3 +33,13 @@ Content-Type: application/json
   "lastName": "jaa",
   "emailId": ""
 }
+
+###
+POST http://localhost:8056/api/v1/employees/
+Content-Type: application/json
+
+{
+  "firstName": "hamza",
+  "lastName": "jaa",
+  "emailId": ""
+}
